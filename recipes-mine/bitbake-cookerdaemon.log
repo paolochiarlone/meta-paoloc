@@ -1,0 +1,1386 @@
+--- Starting bitbake server pid 22264 at 2018-06-27 00:45:29.245719 ---
+Started bitbake server pid 22264
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'dump_signatures': [], 'server_timeout': None, 'debug_domains': [], 'postfile': [], 'extra_assume_provided': [], 'prefile': [], 'invalidate_stamp': None, 'profile': False, 'abort': True, 'debug': 0, 'force': False, 'verbose': False, 'dry_run': False}, {'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'SSH_CONNECTION': '172.27.1.197 49854 10.9.16.64 22', 'SSH_TTY': '/dev/pts/0', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'XDG_SESSION_ID': '3775', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc', 'LC_ALL': 'en_US.UTF-8', 'XDG_RUNTIME_DIR': '/run/user/1000', 'HOME': '/home/builder', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LANG': 'en_US.UTF-8', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'USER': 'builder', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'TERM': 'xterm', 'MAIL': '/var/mail/builder', 'SHLVL': '1', 'SSH_CLIENT': '172.27.1.197 49854 22', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PS1': '\\h \\#> ', 'LOGNAME': 'builder', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['core-image-base'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 25784 at 2018-06-27 00:47:00.551812 ---
+Started bitbake server pid 25784
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'extra_assume_provided': [], 'postfile': [], 'prefile': [], 'verbose': False, 'force': False, 'server_timeout': None, 'debug': 0, 'debug_domains': [], 'dry_run': False, 'abort': True, 'invalidate_stamp': None, 'profile': False, 'dump_signatures': []}, {'USER': 'builder', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'HOME': '/home/builder', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'SHLVL': '1', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LC_ALL': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'LOGNAME': 'builder', 'LANG': 'en_US.UTF-8', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_CONNECTION': '172.27.1.197 49854 10.9.16.64 22', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'PS1': '\\h \\#> ', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'TERM': 'xterm', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'SSH_CLIENT': '172.27.1.197 49854 22', 'SSH_TTY': '/dev/pts/0', 'XDG_SESSION_ID': '3775', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'MAIL': '/var/mail/builder'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['core-image-base'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 18915 at 2018-07-02 15:31:20.250200 ---
+Started bitbake server pid 18915
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'verbose': False, 'force': False, 'invalidate_stamp': None, 'server_timeout': None, 'debug_domains': [], 'profile': False, 'debug': 0, 'abort': True, 'extra_assume_provided': [], 'postfile': [], 'dry_run': False, 'dump_signatures': [], 'prefile': []}, {'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'LOGNAME': 'builder', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'HOME': '/home/builder', 'SHLVL': '1', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'TERM': 'xterm', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'SHELL': '/bin/bash', 'OLDPWD': '/home/builder/workspace/cc6ulsbc_test', 'LANG': 'en_US.UTF-8', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_CLIENT': '172.27.1.131 50072 22', 'XDG_SESSION_ID': '3960', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'MAIL': '/var/mail/builder', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PS1': '\\#> ', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.27.1.131 50072 10.9.16.64 22', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_TTY': '/dev/pts/0', 'USER': 'builder', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['core-image-base'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 19074 at 2018-07-02 15:33:10.712104 ---
+Started bitbake server pid 19074
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'debug_domains': [], 'invalidate_stamp': None, 'force': False, 'verbose': False, 'abort': True, 'profile': False, 'debug': 0, 'prefile': [], 'dry_run': False, 'extra_assume_provided': [], 'postfile': [], 'dump_signatures': [], 'server_timeout': None}, {'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'LOGNAME': 'builder', 'SHLVL': '1', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'USER': 'builder', 'XDG_SESSION_ID': '3960', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'PS1': '\\#> ', 'MAIL': '/var/mail/builder', 'LC_ALL': 'en_US.UTF-8', 'SSH_TTY': '/dev/pts/0', 'HOME': '/home/builder', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'OLDPWD': '/home/builder/workspace/cc6ulsbc_test', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'LANG': 'en_US.UTF-8', 'SSH_CONNECTION': '172.27.1.131 50072 10.9.16.64 22', 'TERM': 'xterm', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'SSH_CLIENT': '172.27.1.131 50072 22', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'SHELL': '/bin/bash', 'XDG_RUNTIME_DIR': '/run/user/1000'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', '-c', 'clean', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'clean']
+Running command ['buildTargets', ['core-image-base'], 'clean']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 19160 at 2018-07-02 15:34:01.604415 ---
+Started bitbake server pid 19160
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'profile': False, 'prefile': [], 'extra_assume_provided': [], 'postfile': [], 'invalidate_stamp': None, 'dry_run': False, 'dump_signatures': [], 'verbose': False, 'debug': 0, 'abort': True, 'server_timeout': None, 'force': False, 'debug_domains': []}, {'LOGNAME': 'builder', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'XDG_RUNTIME_DIR': '/run/user/1000', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'MAIL': '/var/mail/builder', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SHLVL': '1', 'OLDPWD': '/home/builder/workspace/cc6ulsbc_test', 'TERM': 'xterm', 'LC_ALL': 'en_US.UTF-8', 'SSH_TTY': '/dev/pts/0', 'PS1': '\\#> ', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'USER': 'builder', 'LANG': 'en_US.UTF-8', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'SSH_CLIENT': '172.27.1.131 50072 22', 'XDG_SESSION_ID': '3960', 'HOME': '/home/builder', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SHELL': '/bin/bash', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'SSH_CONNECTION': '172.27.1.131 50072 10.9.16.64 22'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['core-image-base'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 20016 at 2018-07-03 09:36:47.024016 ---
+Started bitbake server pid 20016
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'server_timeout': None, 'force': False, 'postfile': [], 'extra_assume_provided': [], 'profile': False, 'debug': 0, 'invalidate_stamp': None, 'abort': True, 'debug_domains': [], 'dry_run': False, 'verbose': False, 'prefile': [], 'dump_signatures': []}, {'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'SSH_TTY': '/dev/pts/0', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'USER': 'builder', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'SHLVL': '1', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_CLIENT': '172.27.1.175 60264 22', 'LOGNAME': 'builder', 'LANG': 'en_US.UTF-8', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PS1': '\\h \\#> ', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'HOME': '/home/builder', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'LC_ALL': 'en_US.UTF-8', 'TERM': 'xterm', 'SSH_CONNECTION': '172.27.1.175 60264 10.9.16.64 22', 'MAIL': '/var/mail/builder', 'SHELL': '/bin/bash', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'XDG_SESSION_ID': '3984', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', '-c', 'clean', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'clean']
+Running command ['buildTargets', ['core-image-base'], 'clean']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 20104 at 2018-07-03 09:42:14.529424 ---
+Started bitbake server pid 20104
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'postfile': [], 'profile': False, 'abort': True, 'extra_assume_provided': [], 'force': False, 'invalidate_stamp': None, 'server_timeout': None, 'dump_signatures': [], 'debug': 0, 'dry_run': False, 'debug_domains': [], 'prefile': [], 'verbose': False}, {'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'TERM': 'xterm', 'XDG_SESSION_ID': '3984', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'SSH_TTY': '/dev/pts/0', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'SHLVL': '1', 'MAIL': '/var/mail/builder', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'SSH_CONNECTION': '172.27.1.175 60264 10.9.16.64 22', 'LC_ALL': 'en_US.UTF-8', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_CLIENT': '172.27.1.175 60264 22', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'PS1': '\\h \\#> ', 'HOME': '/home/builder', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LOGNAME': 'builder', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SHELL': '/bin/bash', 'LANG': 'en_US.UTF-8', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'builder'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['core-image-base'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 20330 at 2018-07-03 09:46:12.603874 ---
+Started bitbake server pid 20330
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'debug': 0, 'dry_run': False, 'force': False, 'profile': False, 'extra_assume_provided': [], 'postfile': [], 'debug_domains': [], 'dump_signatures': [], 'prefile': [], 'abort': True, 'verbose': False, 'server_timeout': None, 'invalidate_stamp': None}, {'SHELL': '/bin/bash', 'HOME': '/home/builder', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SHLVL': '1', 'XDG_SESSION_ID': '3984', 'LANG': 'en_US.UTF-8', 'LC_ALL': 'en_US.UTF-8', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'SSH_CLIENT': '172.27.1.175 60264 22', 'LOGNAME': 'builder', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'XDG_RUNTIME_DIR': '/run/user/1000', 'PS1': '\\h \\#> ', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'USER': 'builder', 'SSH_CONNECTION': '172.27.1.175 60264 10.9.16.64 22', 'TERM': 'xterm', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'SSH_TTY': '/dev/pts/0', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'MAIL': '/var/mail/builder'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', '-c', 'clean', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'clean']
+Running command ['buildTargets', ['core-image-base'], 'clean']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 20430 at 2018-07-03 09:49:36.753587 ---
+Started bitbake server pid 20430
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'profile': False, 'dry_run': False, 'force': False, 'prefile': [], 'invalidate_stamp': None, 'debug': 0, 'extra_assume_provided': [], 'dump_signatures': [], 'verbose': False, 'abort': True, 'debug_domains': [], 'server_timeout': None, 'postfile': []}, {'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'SHLVL': '1', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'LANG': 'en_US.UTF-8', 'LOGNAME': 'builder', 'PS1': '\\h \\#> ', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'XDG_RUNTIME_DIR': '/run/user/1000', 'SSH_CLIENT': '172.27.1.175 60264 22', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_CONNECTION': '172.27.1.175 60264 10.9.16.64 22', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'USER': 'builder', 'SSH_TTY': '/dev/pts/0', 'MAIL': '/var/mail/builder', 'SHELL': '/bin/bash', 'HOME': '/home/builder', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'TERM': 'xterm', 'XDG_SESSION_ID': '3984', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'LC_ALL': 'en_US.UTF-8', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['core-image-base'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 20607 at 2018-07-03 09:55:24.723797 ---
+Started bitbake server pid 20607
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'postfile': [], 'dry_run': False, 'verbose': False, 'force': False, 'debug': 0, 'dump_signatures': [], 'prefile': [], 'invalidate_stamp': None, 'debug_domains': [], 'extra_assume_provided': [], 'server_timeout': None, 'profile': False, 'abort': True}, {'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'TERM': 'xterm', 'XDG_RUNTIME_DIR': '/run/user/1000', 'HOME': '/home/builder', 'LC_ALL': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'SSH_TTY': '/dev/pts/0', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'LANG': 'en_US.UTF-8', 'SHLVL': '1', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'SSH_CONNECTION': '172.27.1.175 60264 10.9.16.64 22', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'XDG_SESSION_ID': '3984', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'SHELL': '/bin/bash', 'LOGNAME': 'builder', 'PS1': '\\h \\#> ', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'USER': 'builder', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'MAIL': '/var/mail/builder', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'SSH_CLIENT': '172.27.1.175 60264 22'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', '-c', 'clean', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'clean']
+Running command ['buildTargets', ['core-image-base'], 'clean']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 20695 at 2018-07-03 10:03:28.211347 ---
+Started bitbake server pid 20695
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'invalidate_stamp': None, 'profile': False, 'verbose': False, 'dry_run': False, 'prefile': [], 'debug': 0, 'server_timeout': None, 'postfile': [], 'debug_domains': [], 'force': False, 'dump_signatures': [], 'abort': True, 'extra_assume_provided': []}, {'LOGNAME': 'builder', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'SHELL': '/bin/bash', 'XDG_SESSION_ID': '3984', 'PS1': '\\h \\#> ', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'SSH_CLIENT': '172.27.1.175 60264 22', 'SHLVL': '1', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'USER': 'builder', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', 'LANG': 'en_US.UTF-8', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'HOME': '/home/builder', 'LC_ALL': 'en_US.UTF-8', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'MAIL': '/var/mail/builder', 'XDG_RUNTIME_DIR': '/run/user/1000', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'SSH_CONNECTION': '172.27.1.175 60264 10.9.16.64 22', 'SSH_TTY': '/dev/pts/0', 'TERM': 'xterm'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['core-image-base'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 20880 at 2018-07-03 10:06:04.006109 ---
+Started bitbake server pid 20880
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'server_timeout': None, 'force': False, 'extra_assume_provided': [], 'profile': False, 'prefile': [], 'invalidate_stamp': None, 'verbose': False, 'postfile': [], 'abort': True, 'dry_run': False, 'debug_domains': [], 'dump_signatures': [], 'debug': 0}, {'MAIL': '/var/mail/builder', 'SSH_TTY': '/dev/pts/0', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'USER': 'builder', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'SSH_CONNECTION': '172.27.1.175 60264 10.9.16.64 22', 'SHLVL': '1', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'LANG': 'en_US.UTF-8', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'HOME': '/home/builder', 'PS1': '\\h \\#> ', 'LOGNAME': 'builder', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'XDG_SESSION_ID': '3984', 'LC_ALL': 'en_US.UTF-8', 'SHELL': '/bin/bash', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'XDG_RUNTIME_DIR': '/run/user/1000', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'TERM': 'xterm', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'SSH_CLIENT': '172.27.1.175 60264 22', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', '-c', 'clean', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['setConfig', 'cmd', 'clean']
+Running command ['buildTargets', ['core-image-base'], 'clean']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting
+--- Starting bitbake server pid 20969 at 2018-07-03 10:07:37.059411 ---
+Started bitbake server pid 20969
+DEBUG: Found bblayers.conf (/home/builder/workspace/cc6ulsbc_test/conf/bblayers.conf)
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-poky
+DEBUG: Adding layer /usr/local/dey-2.4/sources/poky/meta-yocto-bsp
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-oe
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-python
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-networking
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-openembedded/meta-webserver
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-qt5
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-swupdate
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-freescale
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-fsl-demos
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey
+DEBUG: Adding layer /usr/local/dey-2.4/sources/meta-paoloc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:740: including conf/abi_version.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:741: including conf/site.conf
+DEBUG: CONF file 'conf/site.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:742: including conf/auto.conf
+DEBUG: CONF file 'conf/auto.conf' not found
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:743: including conf/local.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:744: including conf/multiconfig/default.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:745: including conf/machine/ccimx6ulsbc.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/ccimx6ulsbc.conf:6: including conf/machine/include/ccimx6ul.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:8: including conf/machine/include/imx-digi-base.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/imx-digi-base.inc:2: including conf/machine/include/digi-defaults.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-arm/conf/machine/include/ccimx6ul.inc:9: including conf/machine/include/tune-cortexa7.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/tune-cortexa7.inc:3: including conf/machine/include/arm/arch-armv7ve.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7ve.inc:8: including conf/machine/include/arm/arch-armv7a.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:8: including conf/machine/include/arm/arch-armv6.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv6.inc:8: including conf/machine/include/arm/arch-armv5-dsp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5-dsp.inc:4: including conf/machine/include/arm/arch-armv5.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:8: including conf/machine/include/arm/arch-armv4.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:15: including conf/machine/include/arm/arch-arm.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv4.inc:16: including conf/machine/include/arm/feature-arm-thumb.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv5.inc:9: including conf/machine/include/arm/feature-arm-vfp.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/machine/include/arm/arch-armv7a.inc:9: including conf/machine/include/arm/feature-arm-neon.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:746: including conf/machine-sdk/x86_64.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:747: including conf/distro/dey.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:144: including conf/distro/include/poky-world-exclude.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:145: including conf/distro/include/no-static-libs.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/meta-digi/meta-digi-dey/conf/distro/dey.conf:146: including conf/distro/include/yocto-uninative.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:748: including conf/distro/defaultsetup.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:1: including conf/distro/include/default-providers.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:2: including conf/distro/include/default-versions.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:3: including conf/distro/include/default-distrovars.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:4: including conf/distro/include/world-broken.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:7: including conf/distro/include/tcmode-default.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/include/tcmode-default.inc:71: including conf/distro/include/as-needed.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:10: including conf/distro/include/tclibc-glibc.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/distro/defaultsetup.conf:12: including conf/distro/include/uninative-flags.inc
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:749: including conf/documentation.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:750: including conf/licenses.conf
+DEBUG: CONF /usr/local/dey-2.4/sources/poky/meta/conf/bitbake.conf:751: including conf/sanity.conf
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:4)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/terminal.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/patch.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/staging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/mirrors.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:7)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utils.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:8)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/utility-tasks.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:9)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/metadata_scm.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:10)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/logging.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/base.bbclass:11)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/rm_work.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/machine-overrides-extender.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/meta-freescale/classes/fsl-dynamic-packagearch.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta-poky/classes/poky-sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/uninative.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/remove-libtool.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package_rpm.bbclass:1)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/packagedata.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:41)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/chrpath.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:42)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/insane.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/package.bbclass:45)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/buildstats.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/linuxloader.bbclass (from /usr/local/dey-2.4/sources/poky/meta/classes/image-mklibs.bbclass:5)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/image-prelink.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/debian.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/devshell.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sstate.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/license.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/blacklist.bbclass (from configuration INHERITs:0)
+DEBUG: Inheriting /usr/local/dey-2.4/sources/poky/meta/classes/sanity.bbclass (from configuration INHERITs:0)
+DEBUG: Clearing SRCREV cache due to cache policy of: clear
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/local_file_checksum_cache.dat'
+DEBUG: Using cache in '/home/builder/workspace/cc6ulsbc_test/cache/bb_codeparser.dat'
+DEBUG: Enabling uninative
+Entering server connection loop
+Accepting [<socket.socket fd=7, family=AddressFamily.AF_UNIX, type=SocketKind.SOCK_STREAM, proto=0, laddr=bitbake.sock>]
+Connecting Client
+Running command ['setFeatures', [2]]
+Running command ['updateConfig', {'prefile': [], 'invalidate_stamp': None, 'verbose': False, 'abort': True, 'debug': 0, 'extra_assume_provided': [], 'debug_domains': [], 'dry_run': False, 'profile': False, 'postfile': [], 'server_timeout': None, 'dump_signatures': [], 'force': False}, {'SSH_TTY': '/dev/pts/0', 'MAIL': '/var/mail/builder', 'BB_ENV_EXTRAWHITE': 'ALL_PROXY BBPATH_EXTRA BB_NO_NETWORK BB_NUMBER_THREADS BB_SETSCENE_ENFORCE BB_SRCREV_POLICY DISTRO FTPS_PROXY FTP_PROXY GIT_PROXY_COMMAND HTTPS_PROXY HTTP_PROXY MACHINE NO_PROXY PARALLEL_MAKE SCREENDIR SDKMACHINE SOCKS5_PASSWD SOCKS5_USER SSH_AGENT_PID SSH_AUTH_SOCK STAMPS_DIR TCLIBC TCMODE all_proxy ftp_proxy ftps_proxy http_proxy https_proxy no_proxy ', 'OLDPWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'SHLVL': '1', 'JAVA_HOME': '/usr/lib/jvm/java-8-oracle', 'LANG': 'en_US.UTF-8', 'BBPATH': '/home/builder/workspace/cc6ulsbc_test', 'XDG_SESSION_ID': '3984', 'HOME': '/home/builder', 'PATH': '/usr/local/dey-2.4/sources/meta-digi/scripts:/usr/local/dey-2.4/sources/poky/scripts:/usr/local/dey-2.4/sources/poky/bitbake/bin:/usr/local/bin/:/home/builder/bin:/home/builder/.local/bin:~/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/usr/lib/jvm/java-8-oracle/bin:/usr/lib/jvm/java-8-oracle/db/bin:/usr/lib/jvm/java-8-oracle/jre/bin', '_': '/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'DERBY_HOME': '/usr/lib/jvm/java-8-oracle/db', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.Z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.jpg=01;35:*.jpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SSH_CLIENT': '172.27.1.175 60264 22', 'TERM': 'xterm', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'USER': 'builder', 'SHELL': '/bin/bash', 'LC_ALL': 'en_US.UTF-8', 'PWD': '/usr/local/dey-2.4/sources/meta-paoloc/recipes-mine', 'LOGNAME': 'builder', 'J2REDIR': '/usr/lib/jvm/java-8-oracle/jre', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'SSH_CONNECTION': '172.27.1.175 60264 10.9.16.64 22', 'PS1': '\\h \\#> ', 'BUILDDIR': '/home/builder/workspace/cc6ulsbc_test', 'XDG_RUNTIME_DIR': '/run/user/1000', 'J2SDKDIR': '/usr/lib/jvm/java-8-oracle'}, ['/usr/local/dey-2.4/sources/poky/bitbake/bin/bitbake', 'core-image-base']]
+Running command ['getVariable', 'BBINCLUDELOGS']
+Running command ['getVariable', 'BBINCLUDELOGS_LINES']
+Running command ['getSetVariable', 'BB_CONSOLELOG']
+Running command ['getUIHandlerNum']
+Running command ['setEventMask', 1, 20, {}, ['bb.runqueue.runQueueExitWait', 'bb.event.LogExecTTY', 'logging.LogRecord', 'bb.build.TaskFailed', 'bb.build.TaskBase', 'bb.event.ParseStarted', 'bb.event.ParseProgress', 'bb.event.ParseCompleted', 'bb.event.CacheLoadStarted', 'bb.event.CacheLoadProgress', 'bb.event.CacheLoadCompleted', 'bb.command.CommandFailed', 'bb.command.CommandExit', 'bb.command.CommandCompleted', 'bb.cooker.CookerExit', 'bb.event.MultipleProviders', 'bb.event.NoProvider', 'bb.runqueue.sceneQueueTaskStarted', 'bb.runqueue.runQueueTaskStarted', 'bb.runqueue.runQueueTaskFailed', 'bb.runqueue.sceneQueueTaskFailed', 'bb.event.BuildBase', 'bb.build.TaskStarted', 'bb.build.TaskSucceeded', 'bb.build.TaskFailedSilent', 'bb.build.TaskProgress', 'bb.event.ProcessStarted', 'bb.event.ProcessProgress', 'bb.event.ProcessFinished']]
+Running command ['getVariable', 'BB_DEFAULT_TASK']
+Running command ['setConfig', 'cmd', 'build']
+Running command ['buildTargets', ['core-image-base'], 'build']
+Connecting Client
+Disconnecting Client
+No timeout, exiting.
+Exiting

@@ -25,27 +25,26 @@ Patches
 =======
 
 Please submit any patches against the latam-training layer to the
-xxxx mailing list (xxxx@zzzz.org) and cc: the maintainer:
+the maintainer:
 
-Maintainer: XXX YYYYYY <xxx.yyyyyy@zzzzz.com>
+Maintainer: Paolo Chiarlone <paolo.chiarlone@digi.com>
 
 
 Table of Contents
 =================
 
-  I. Adding the latam-training layer to your build
+  I. Adding the layer to your build
  II. Misc
 
 
-I. Adding the latam-training layer to your build
+I. Adding the paoloc layer to your build
 =================================================
 
---- replace with specific instructions for the latam-training layer ---
+Add the layer to the bblayers.conf of your project
 
-In order to use this layer, you need to make the build system aware of
-it.
+In order to use this layer, you need to make the build system aware of it.
 
-Assuming the latam-training layer exists at the top-level of your
+Assuming the layer exists at the top-level of your
 yocto build tree, you can add it to the build system by adding the
 location of the latam-training layer to bblayers.conf, along with any
 other layers needed. e.g.:
@@ -54,11 +53,11 @@ other layers needed. e.g.:
     /path/to/yocto/meta \
     /path/to/yocto/meta-poky \
     /path/to/yocto/meta-yocto-bsp \
-    /path/to/yocto/meta-latam-training \
+    /path/to/yocto/meta-paoloc \
     "
 
 
 II. Misc
 ========
 
---- replace with specific information about the latam-training layer ---
+This is used for FAE testing purposes only

@@ -1,0 +1,40 @@
+From 590769a2679e5eb8574f3bc07ec61a37f6c9339f Mon Sep 17 00:00:00 2001
+From: Paolo Chiarlone <paoloc@digi.com>
+Date: Fri, 22 Jun 2018 15:56:09 -0700
+Subject: [PATCH] Changes for enabling i.MX6UL ADC2 ADC3 ADC5
+
+---
+ arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts | 10 +++++-----
+ 1 file changed, 5 insertions(+), 5 deletions(-)
+
+diff --git a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
+index 18f117a..0740848 100644
+--- a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
++++ b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
+@@ -31,7 +31,7 @@
+ &adc1 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&pinctrl_adc1>;
+-	adc-ch-list = <2>;
++	adc-ch-list = <2 3 5>;
+ 	status = "okay";
+ };
+ 
+@@ -272,10 +272,10 @@
+ 		/* Uncomment specific pins of the ADC channels enabled in 'adc-ch-list' */
+ 		pinctrl_adc1: adc1grp {
+ 			fsl,pins = <
+-		//		/* EXP_GPIO_1 -> GPIO1_5/ADC1_IN5 */
+-		//		MX6UL_PAD_GPIO1_IO05__GPIO1_IO05        0xb0
+-		//		/* EXP_GPIO_2 -> GPIO1_3/ADC1_IN3 */
+-		//		MX6UL_PAD_GPIO1_IO03__GPIO1_IO03        0xb0
++				/* EXP_GPIO_1 -> GPIO1_5/ADC1_IN5 */
++				MX6UL_PAD_GPIO1_IO05__GPIO1_IO05        0xb0
++				/* EXP_GPIO_2 -> GPIO1_3/ADC1_IN3 */
++				MX6UL_PAD_GPIO1_IO03__GPIO1_IO03        0xb0
+ 				/* EXP_GPIO_3 -> GPIO1_2/ADC1_IN2 */
+ 				MX6UL_PAD_GPIO1_IO02__GPIO1_IO02        0xb0
+ 			>;
+-- 
+2.7.4
+
