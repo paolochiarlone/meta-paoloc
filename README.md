@@ -5,7 +5,7 @@ Digi Embedded PaoloC layer
 
 This meta-layer is designed to create a pre-configured rootfs
 with the necessary typical files used in a CC6UL project for
-demos.
+demos by the FAE.
 
 Also it does change the DT files to configure the I/O correctly.
 

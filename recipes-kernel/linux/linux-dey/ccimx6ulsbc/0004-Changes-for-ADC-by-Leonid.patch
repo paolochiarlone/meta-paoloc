@@ -1,0 +1,124 @@
+From 61282859bc0a9d791168d60c51947802f399b7d2 Mon Sep 17 00:00:00 2001
+From: Paolo Chiarlone <paoloc@digi.com>
+Date: Wed, 11 Jul 2018 01:19:13 -0700
+Subject: [PATCH] Changes for ADC by Leonid
+
+---
+ arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts | 25 ++++++++++++++++---------
+ arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi      | 12 ++++++------
+ 2 files changed, 22 insertions(+), 15 deletions(-)
+
+diff --git a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
+index 0740848..db68c68 100644
+--- a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
++++ b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
+@@ -31,6 +31,8 @@
+ &adc1 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&pinctrl_adc1>;
++	/*adc-ch-list = <2 3 5>;*/
++	/* @PC changes based on Leonid suggestions */
+ 	adc-ch-list = <2 3 5>;
+ 	status = "okay";
+ };
+@@ -98,24 +100,24 @@
+  * entries for the Goodix touch.
+  */
+ &goodix_touch1 {
+-	/* PC: no touch to free the GPIOs */
++	/* @PC no touch to free the GPIOs */
+ 	status = "disabled";
+ };
+ 
+ &goodix_touch2 {
+-	/* PC: no touch to free the GPIOs */
++	/* @PC no touch to free the GPIOs */
+ 	status = "disabled";
+ };
+ 
+ /* Parallel LCD */
+ &lcdif {
+-	/* PC: no LCD to free the GPIOs */
++	/* @PC no LCD to free the GPIOs */
+ 	status = "disabled";
+ };
+ 
+ /* LCD backlight (PWM5) */
+ &lcd_backlight {
+-	/* PC: no backlight to free the PWM */
++	/* @PC no backlight to free the PWM */
+ 	status = "disabled";
+ };
+ 
+@@ -130,7 +132,7 @@
+  * Edit adc-ch-list to include the ADC channels that you want to enable.
+  */
+  &mca_adc {
+-	/* PC: enabled the ADCs from the MCA */
++	/* @PC enabled the ADCs from the MCA */
+  	digi,adc-ch-list = <1 3>;
+  	digi,adc-vref = <3000000>;
+  };
+@@ -238,7 +240,8 @@
+ };
+ 
+ &usbotg1 {
+-	status = "okay";
++	//status = "okay";
++	status = "disabled";
+ };
+ 
+ &usbotg2 {
+@@ -273,11 +276,15 @@
+ 		pinctrl_adc1: adc1grp {
+ 			fsl,pins = <
+ 				/* EXP_GPIO_1 -> GPIO1_5/ADC1_IN5 */
+-				MX6UL_PAD_GPIO1_IO05__GPIO1_IO05        0xb0
++				/* MX6UL_PAD_GPIO1_IO05__GPIO1_IO05        0xb0 */
+ 				/* EXP_GPIO_2 -> GPIO1_3/ADC1_IN3 */
+-				MX6UL_PAD_GPIO1_IO03__GPIO1_IO03        0xb0
++				/* MX6UL_PAD_GPIO1_IO03__GPIO1_IO03        0xb0 */
+ 				/* EXP_GPIO_3 -> GPIO1_2/ADC1_IN2 */
+-				MX6UL_PAD_GPIO1_IO02__GPIO1_IO02        0xb0
++				/* MX6UL_PAD_GPIO1_IO02__GPIO1_IO02        0xb0 */
++				/* @PC changes based on Leonid suggestion */
++				MX6UL_PAD_GPIO1_IO00__GPIO1_IO00        0xb0
++				MX6UL_PAD_GPIO1_IO01__GPIO1_IO01        0xb0
++				MX6UL_PAD_GPIO1_IO04__GPIO1_IO04        0xb0
+ 			>;
+ 		};
+ 	};
+diff --git a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi
+index bfff092..beaef7d 100644
+--- a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi
++++ b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi
+@@ -707,20 +707,20 @@
+ 
+ 		pinctrl_usbotg1: usbotg1grp {
+ 			fsl,pins = <
+-				MX6UL_PAD_GPIO1_IO00__ANATOP_OTG1_ID	0x17059
+-				MX6UL_PAD_GPIO1_IO04__GPIO1_IO04	0x17059 /* USBOTG1 PWR */
+-				MX6UL_PAD_GPIO1_IO01__USB_OTG1_OC	0x17059
++				//MX6UL_PAD_GPIO1_IO00__ANATOP_OTG1_ID	0x17059
++				//MX6UL_PAD_GPIO1_IO04__GPIO1_IO04	0x17059 /* USBOTG1 PWR */
++				//MX6UL_PAD_GPIO1_IO01__USB_OTG1_OC	0x17059
+ 			>;
+ 		};
+ 
+ 		/* General purpose pinctrl */
+ 		pinctrl_hog: hoggrp {
+                     fsl,pins = <
+-                        /* CH: EXP_GPIO_1 */
++                        /* @CH EXP_GPIO_1 */
+                         MX6UL_PAD_GPIO1_IO05__GPIO1_IO05                0x10b0
+-                        /* CH: EXP_GPIO_2 */
++                        /* @CH EXP_GPIO_2 */
+                         MX6UL_PAD_GPIO1_IO03__GPIO1_IO03                0x10b0
+-                        /* CH: EXP_GPIO_3 */
++                        /* @CH EXP_GPIO_3 */
+                         MX6UL_PAD_GPIO1_IO02__GPIO1_IO02                0x10b0
+                     >;
+ 		};
+-- 
+2.7.4
+

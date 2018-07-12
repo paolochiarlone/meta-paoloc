@@ -1,0 +1,35 @@
+# Copyright (C) 2018 Digi International Inc.
+
+SUMMARY = "Home Addons"
+DESCRIPTION = "Adding optional files to homedir"
+LICENSE = "CLOSED"
+
+FILESEXTRAPATHS_prepend := "${THISDIR}/files:"
+
+RPROVIDES_${PN} += "${PN}"
+
+
+SRC_URI = " \
+	file://LED_kitt.py \
+	file://timer_adc_led.sh \
+"
+
+
+# Specify where to get the files
+S = "${WORKDIR}"
+
+do_configure[noexec] = "1"
+do_compile[noexec] = "1"
+
+do_install() {
+	# creating the destination directories
+	install -d ${D}/home/root
+
+	# extra files need to go in the respective directories
+	install -m 0644 ${WORKDIR}/LED_kitt.py ${D}/home/root/
+	install -m 0755 ${WORKDIR}/timer_adc_led.sh ${D}/home/root
+	###install -m 0644 ${MY_FILES}/.profile ${D}/home/root/
+}
+
+FILES_${PN} += "/home/root/* "
+

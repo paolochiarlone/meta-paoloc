@@ -1,0 +1,146 @@
+From 9e8abd616886c9f105d8aa2d315c115455a3bd46 Mon Sep 17 00:00:00 2001
+From: Paolo Chiarlone <paoloc@digi.com>
+Date: Wed, 11 Jul 2018 10:12:42 -0700
+Subject: [PATCH] Final modifications for ADC
+
+---
+ arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts | 43 +++++++++++++++++---------
+ arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi      | 16 +++++++---
+ 2 files changed, 40 insertions(+), 19 deletions(-)
+
+diff --git a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
+index c7a7ee84..bbaa3d1 100644
+--- a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
++++ b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc-id135.dts
+@@ -31,7 +31,10 @@
+ &adc1 {
+ 	pinctrl-names = "default";
+ 	pinctrl-0 = <&pinctrl_adc1>;
+-	adc-ch-list = <2>;
++	/* @PC changes based on Leonid suggestions */
++	/*adc-ch-list = <0 1 4>;*/
++	/* @PC my changes to enable GPIO1_IO02, GPIO1_IO03, GPIO1_IO05 (all from the i.MX6UL) */
++	adc-ch-list = <2 3 5>;
+ 	status = "okay";
+ };
+ 
+@@ -98,21 +101,25 @@
+  * entries for the Goodix touch.
+  */
+ &goodix_touch1 {
+-	status = "okay";
++	/* @PC no touch to free the GPIOs */
++	status = "disabled";
+ };
+ 
+ &goodix_touch2 {
+-	status = "okay";
++	/* @PC no touch to free the GPIOs */
++	status = "disabled";
+ };
+ 
+ /* Parallel LCD */
+ &lcdif {
+-	status = "okay";
++	/* @PC no LCD to free the GPIOs */
++	status = "disabled";
+ };
+ 
+ /* LCD backlight (PWM5) */
+ &lcd_backlight {
+-	status = "okay";
++	/* @PC no backlight to free the PWM */
++	status = "disabled";
+ };
+ 
+ &max98089 {
+@@ -125,10 +132,11 @@
+  *  - MCA_IO3 (channel 3)
+  * Edit adc-ch-list to include the ADC channels that you want to enable.
+  */
+-// &mca_adc {
+-// 	digi,adc-ch-list = <1 3>;
+-// 	digi,adc-vref = <3000000>;
+-// };
++ &mca_adc {
++	/* @PC enabled the ADCs from the MCA */
++ 	digi,adc-ch-list = <1 3>;
++ 	digi,adc-vref = <3000000>;
++ };
+ 
+ /*
+  * Uncomment to enable MCA UART:
+@@ -233,7 +241,8 @@
+ };
+ 
+ &usbotg1 {
+-	status = "okay";
++	//status = "okay";
++	status = "disabled";
+ };
+ 
+ &usbotg2 {
+@@ -267,12 +276,16 @@
+ 		/* Uncomment specific pins of the ADC channels enabled in 'adc-ch-list' */
+ 		pinctrl_adc1: adc1grp {
+ 			fsl,pins = <
+-		//		/* EXP_GPIO_1 -> GPIO1_5/ADC1_IN5 */
+-		//		MX6UL_PAD_GPIO1_IO05__GPIO1_IO05        0xb0
+-		//		/* EXP_GPIO_2 -> GPIO1_3/ADC1_IN3 */
+-		//		MX6UL_PAD_GPIO1_IO03__GPIO1_IO03        0xb0
++				/* EXP_GPIO_1 -> GPIO1_5/ADC1_IN5 */
++				/* MX6UL_PAD_GPIO1_IO05__GPIO1_IO05        0xb0 */
++				/* EXP_GPIO_2 -> GPIO1_3/ADC1_IN3 */
++				/* MX6UL_PAD_GPIO1_IO03__GPIO1_IO03        0xb0 */
+ 				/* EXP_GPIO_3 -> GPIO1_2/ADC1_IN2 */
+-				MX6UL_PAD_GPIO1_IO02__GPIO1_IO02        0xb0
++				/* MX6UL_PAD_GPIO1_IO02__GPIO1_IO02        0xb0 */
++				/* @PC changes based on Leonid suggestion */
++				MX6UL_PAD_GPIO1_IO00__GPIO1_IO00        0xb0
++				MX6UL_PAD_GPIO1_IO01__GPIO1_IO01        0xb0
++				MX6UL_PAD_GPIO1_IO04__GPIO1_IO04        0xb0
+ 			>;
+ 		};
+ 	};
+diff --git a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi
+index cef5088..beaef7d 100644
+--- a/arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi
++++ b/arch/arm/boot/dts/imx6ul-ccimx6ulsbc.dtsi
+@@ -257,7 +257,7 @@
+ 		     &pinctrl_lcdif_clken
+ 		     &pinctrl_lcdif_hvsync>;
+ 	lcd-supply = <&ldo4_ext>;       /* BU90T82 LVDS bridge power */
+-	display = <&g101evn010>;
++	display = <&f07a0102>;
+ 	status = "disabled";
+ 
+ 	f07a0102: display@0 {
+@@ -707,14 +707,22 @@
+ 
+ 		pinctrl_usbotg1: usbotg1grp {
+ 			fsl,pins = <
+-				MX6UL_PAD_GPIO1_IO00__ANATOP_OTG1_ID	0x17059
+-				MX6UL_PAD_GPIO1_IO04__GPIO1_IO04	0x17059 /* USBOTG1 PWR */
+-				MX6UL_PAD_GPIO1_IO01__USB_OTG1_OC	0x17059
++				//MX6UL_PAD_GPIO1_IO00__ANATOP_OTG1_ID	0x17059
++				//MX6UL_PAD_GPIO1_IO04__GPIO1_IO04	0x17059 /* USBOTG1 PWR */
++				//MX6UL_PAD_GPIO1_IO01__USB_OTG1_OC	0x17059
+ 			>;
+ 		};
+ 
+ 		/* General purpose pinctrl */
+ 		pinctrl_hog: hoggrp {
++                    fsl,pins = <
++                        /* @CH EXP_GPIO_1 */
++                        MX6UL_PAD_GPIO1_IO05__GPIO1_IO05                0x10b0
++                        /* @CH EXP_GPIO_2 */
++                        MX6UL_PAD_GPIO1_IO03__GPIO1_IO03                0x10b0
++                        /* @CH EXP_GPIO_3 */
++                        MX6UL_PAD_GPIO1_IO02__GPIO1_IO02                0x10b0
++                    >;
+ 		};
+ 	};
+ };
+-- 
+2.7.4
+
